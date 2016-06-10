@@ -120,7 +120,7 @@ static NSString * const reuseIdentifier = @"RightCell";
     //select cell coding...
     
     //选中的Model
-    YContactObject * contactObject = self.contactObjects[indexPath.row];
+    YContactObject * contactObject = self.handleContactObjects[indexPath.section][indexPath.row];
 
     //进入详细修改界面
     ABPersonViewController * personViewController = [[ABPersonViewController alloc]init];
